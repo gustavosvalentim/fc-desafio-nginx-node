@@ -66,7 +66,9 @@ async function startApp() {
     res.send(template);
   });
 
-  app.listen(300);
+  app.listen(3000, "0.0.0.0", () => {
+    console.log("Aplicação iniciada na porta 3000");
+  });
 }
 
 startApp();
